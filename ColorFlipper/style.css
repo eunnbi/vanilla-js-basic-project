@@ -56,9 +56,11 @@ nav {
   padding: 10px;
 }
 
+.chosen,
 .nav_links a:hover {
   color: #4ea3e4;
 }
+
 
 main {
   height: 100%;
