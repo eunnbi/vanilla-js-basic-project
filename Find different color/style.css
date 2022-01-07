@@ -1,0 +1,48 @@
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin: 10px 0 50px;
+}
+
+main {
+  margin: 0 auto;
+  width: 700px;
+  height: 700px;
+  display: grid;
+  gap: 5px;
+}
+
+.guide {
+  width: 700px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.box {
+  cursor: pointer;
+}
+
+.fail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.hidden {
+  display: none;
+}

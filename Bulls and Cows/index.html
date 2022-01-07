@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulls and Cows</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Bulls and Cows</h1>
+    </header>
+    <section class="section">
+        <h2 class="section__guide">Guess the three numbers below.</h2>
+        <div class="computer-numbers">
+            <div class="computer-number">
+                <span>?</span>
+            </div>
+            <div class="computer-number">
+                <span>?</span>
+            </div>
+            <div class="computer-number">
+                <span>?</span>
+            </div>
+        </div>
+    </section>
+    <section class="alert">
+        <p class="alert__text"></p>
+    </section>
+    <form action="" class="user-form">
+        <input type="text" placeholder="Please Enter Three-Digit Number" autofocus>
+        <button type="submit">Submit</button>
+    </form>
+    <table class="user-inputs">
+        <thead>
+            <tr>
+                <th class="number">number</th>
+                <th class="result">result</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <div class="result-success hidden">
+        <h2>success :)</h2>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

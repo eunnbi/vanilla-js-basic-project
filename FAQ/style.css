@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  background-color: #f1f5f8;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.FAQ {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.FAQ-content li {
+  width: 1000px;
+  margin: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px -2px #999;
+}
+
+.answer-section {
+  display: none;
+}
+.question-section {
+  position: relative;
+  padding: 20px 0;
+  font-size: 20px;
+  color: #1b1d21;
+  line-height: 28px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.icon-question {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  display: inline-block;
+  background: url(image/icon_question.gif) no-repeat center 0;
+}
+.icon-answer {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  display: inline-block;
+  background: url(image/icon_answer.gif) no-repeat center 0;
+}
+
+.question,
+.answer {
+  display: inline-block;
+  padding: 0 60px;
+}
+
+.btn {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-btn,
+.close-btn {
+  border-radius: 5px;
+  transition: all ease 0.5s;
+  color: saddlebrown;
+}
+
+.show-btn:hover,
+.close-btn:hover {
+  transform: rotate(90deg);
+}
+
+.show-answer .question-section {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.show-answer .question-btn::after {
+  display: inline-block;
+  content: "\2212";
+  font-size: 20px;
+  color: saddlebrown;
+}
+
+.FAQ-content .show-answer .answer-section {
+  display: block;
+  position: relative;
+  padding: 20px 0;
+  font-size: 20px;
+  color: #1b1d21;
+  line-height: 28px;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.hidden {
+  display: none;
+}

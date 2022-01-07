@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+.header {
+  text-align: center;
+  margin: 30px 0 40px;
+}
+
+.header__title {
+  font-weight: bold;
+}
+
+.result {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.result__text {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.cards {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  font-size: 40px;
+  border: 2px solid #000;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.open__card {
+  animation: showCard 1s ease-in-out forwards;
+}
+
+@keyframes showCard {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+.close__card {
+  animation: closeCard 1s ease-in-out;
+}
+@keyframes closeCard {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.card:nth-child(5n + 1) {
+  margin-left: 0;
+}
+
+.card:nth-child(5n) {
+  margin-right: 0;
+}
+
+.card__question {
+  color: tomato;
+  transform: none;
+}
+
+.hidden {
+  display: none;
+}

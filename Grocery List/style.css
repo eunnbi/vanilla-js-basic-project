@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f1f5f8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+}
+
+section {
+  width: 80vw;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 100px auto;
+  margin-bottom: 200px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px #999;
+  padding: 50px 30px 30px;
+}
+
+.alert {
+  position: absolute;
+  top: -12px;
+  width: 100%;
+  text-transform: capitalize;
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 2px 0 2px;
+}
+
+.alert.success {
+  background-color: #6be67596;
+  color: green;
+}
+
+.alert.warning {
+  background-color: #e66b6d83;
+  color: rgb(177, 0, 0);
+}
+
+form {
+  width: 100%;
+  position: relative;
+}
+
+.form-control {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.form-control input {
+  border: transparent;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #f1f5f8;
+  height: 30px;
+  padding-left: 20px;
+}
+.form-control button {
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #a5d5f8;
+  height: 30px;
+  font-size: 15px;
+}
+
+.form-control input:focus,
+.form-control button:focus {
+  outline: 2px solid #1161cc;
+  z-index: 1;
+}
+
+form h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #0b3553;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.grocery-items {
+  width: 100%;
+  padding: 40px 0 0;
+}
+
+.grocery-items .grocery-item + .grocery-item {
+  margin-top: 10px;
+}
+.grocery-item {
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr 1fr;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.grocery-item:hover {
+  background-color: #f1f5f8;
+}
+
+.item-name {
+  text-transform: capitalize;
+  color: #586b78;
+  margin: 0;
+}
+
+.edit-btn,
+.delete-btn {
+  margin: 0;
+  text-align: left;
+  width: 15px;
+  height: 14px;
+}
+
+.check-btn {
+  width: 18px;
+  color: #586b78;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.check-btn.checked {
+  color: rgba(255, 139, 148, 0.8);
+}
+
+.fa-check-circle {
+  width: 100%;
+  height: 100%;
+}
+
+.fa-edit {
+  color: #6be676;
+  width: 100%;
+  height: 100%;
+}
+
+.fa-trash {
+  color: #e66b6d;
+  width: 100%;
+  height: 100%;
+}
+
+.clear-btn {
+  color: red;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 3px;
+  padding-top: 30px;
+}

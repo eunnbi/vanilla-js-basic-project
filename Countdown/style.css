@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(235, 247, 250);
+}
+.gift-section {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift-img {
+  width: 600px;
+  height: 400px;
+  margin-right: 40px;
+}
+
+.gift-info {
+  width: 500px;
+}
+
+.gift-info h3 {
+  text-transform: uppercase;
+  color: rgb(47, 129, 223);
+  font-size: 30px;
+  margin: 0;
+}
+
+.gift-info h4 {
+  text-transform: uppercase;
+  margin: 10px 0 50px;
+}
+
+.gift-info p {
+  color: rgba(70, 131, 180, 0.842);
+  margin-bottom: 40px;
+}
+
+.deadline {
+  display: flex;
+}
+
+.deadline-format {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(41, 58, 109);
+  color: #fff;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.deadline-format:last-child {
+  margin-right: 0;
+}
+
+.deadline-format h4 {
+  text-transform: uppercase;
+  margin: 5px 0 5px;
+  font-size: 30px;
+}
+
+.deadline-format span {
+  font-size: 15px;
+}
+
+.expire {
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  margin: 0;
+}
