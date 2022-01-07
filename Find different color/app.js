@@ -59,7 +59,6 @@ function updateColorWeight(){
     if (colorWeight > 10){
         colorWeight = colorWeight - 8;
     }
-    console.log(colorWeight);
 }
 
 // 랜덤 컬러 (메인 컬러, 정답 컬러) 생성
