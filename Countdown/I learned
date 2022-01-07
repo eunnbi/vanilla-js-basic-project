@@ -35,6 +35,7 @@ oneDay = 24hour = 24 * 60 * 60 * 1000ms
 
 6) let timerId = setInterval(callback, delay, arg1, arg2, ...);
 - 일정 시간(delay) 간격을 두고 콜백함수 실행
+- setInterval로 등록된 타이머 id 반환
 
 7) clearInterval(timerId);
-- setInterval로 호출될 콜백함수 호출 스케줄링 취소
+- setInterval로 등록된 타이머 id를 취소하여 콜백함수 호출 중지
