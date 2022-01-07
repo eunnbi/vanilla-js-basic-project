@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f1f5f8;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding: 30px;
+  font-size: 50px;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  border: 2px solid darkgoldenrod;
+  margin: 10px auto 0;
+}
+
+.menu-image {
+  width: 200px;
+  height: 150px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 3px solid darkgoldenrod;
+}
+
+.menu-item {
+  padding: 20px;
+}
+
+.menu-item header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+.price {
+  color: darkgoldenrod;
+}
+
+.btn-container {
+  padding: 5px 0 20px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-btn {
+  font-size: 15px;
+  text-transform: capitalize;
+  border: 2px solid darkgoldenrod;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #999;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+}
+
+.filter-btn:hover {
+  background-color: darkgoldenrod;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-image {
+    float: left;
+    width: 260px;
+    height: 200px;
+  }
+  .menu-item {
+    width: 650px;
+    padding: 60px;
+  }
+
+  .btn-container {
+    padding: 0;
+    width: 500px;
+  }
+
+  .filter-btn {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu-item {
+    padding: 80px;
+  }
+}

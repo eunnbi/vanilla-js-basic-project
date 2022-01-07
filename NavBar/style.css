@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(217, 236, 241);
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-header {
+  display: inline-block;
+  padding: 20px;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.nav-container {
+  background-color: #fff;
+  box-shadow: 0 1px 6px #999;
+}
+
+.nav-container::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.nav-btn {
+  float: right;
+  margin: 26px;
+  transition: all 0.3s ease-in-out;
+  font-size: 17px;
+  color: rgb(61, 132, 212);
+}
+
+.nav-btn:hover {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.links {
+  display: none;
+  font-size: 20px;
+}
+
+.show-links {
+  display: block;
+  font-size: 20px;
+}
+
+.show-links li {
+  color: rgb(87, 87, 87);
+  font-size: 25px;
+}
+
+.show-links a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.show-links li a:hover {
+  background-color: rgb(175, 247, 247);
+}
+
+.show-links a:hover {
+  padding-left: 30px;
+}
+
+@media (min-width: 900px) {
+  .nav-btn {
+    display: none;
+  }
+
+  .links {
+    display: block;
+    float: right;
+    padding: 33px 0;
+  }
+
+  .links a {
+    padding: 0;
+  }
+
+  .links li {
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 25px;
+  }
+
+  .links li a:hover {
+    background-color: inherit;
+    color: rgb(94, 215, 245);
+  }
+
+  .links a:hover {
+    padding-left: 0;
+  }
+}
