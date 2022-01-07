@@ -16,3 +16,7 @@ HTMLTableElement.deleteRow(index)
   for (let i = 0; i < rowLength - 1; i++){
     table.deleteRow(-1);
   }
+
+
+4) 특정 연도와 달의 마지막 날짜 구하기
+: new Date(year, month+1, 0).getDate();
