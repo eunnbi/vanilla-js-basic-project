@@ -1,0 +1,9 @@
+classList.toggle("className");
+- classList에 특정 클래스 이름이 있는지 확인하여 있다면 클래스 이름을 제거하고 없다면 클래스 이름을 추가한다.
+- e.target.classList.toggle("className");
+  => if (e.target.classList.contains("className")){
+        e.target.classList.remove("className");
+     }
+     else{
+        e.target.classList.add("className");
+     }
