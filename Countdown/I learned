@@ -1,0 +1,34 @@
+1) Date() 생성자
+- new Date(): 생성 순간의 날짜와 시간을 나타내는 Date 객체 생성
+- new Date(year, monthIndex, day, hours, minutes, seconds, milliseconds);
+
+2) 관련 메서드
+- getDate(): 일(1~31) 반환
+- getDay(): 요일(0~6) 반환
+- getFullYear(): 연도 반환
+- getHours: 시(0~23) 반환
+- getMinutes(): 분(0~59) 반환
+- getMilliseconds: 밀리초(0~999) 반환
+- getMonth(): 월(0~11) 반환
+- getSeconds(): 초(0~59) 반환
+- getTime(): 밀리초 단위로 반환
+
+3) remaining time 구하기
+remainingTime = future.getTime() - today.getTime() -> 먼저, 밀리초 단위로 구하기
+oneSecond = 1000ms
+oneMinute = 60s = 60 * 1000ms
+oneHour = 60min = 60 * 60 * 1000ms
+oneDay = 24hour = 24 * 60 * 60 * 1000ms
+-> day = Math.floor(remainingTime / oneDay);
+   hour = Math.floor((remainingTime % oneDay) / oneHour);
+   minute = Math.floor((remainingTime % oneHour) / oneMinute);
+   second = Math.floor((remainingTime % oneMinute) / oneSecond);
+
+
+4) padStart(targetLength, padString);
+- 만약 현재 문자열 길이가 주어진 문자열 길이보다 크다면 그대로 현재 문자열 반환
+- 아니라면 주어진 문자열 길이가 될 때까지 문자열 앞부분부터 인자로 받은 문자열을 채워 새로운 문자열을 반환한다.
+
+5) padEnd(targetLength, padString);
+- 만약 현재 문자열 길이가 주어진 문자열 길이보다 크다면 그대로 현재 문자열 반환
+- 아니라면 주어진 문자열 길이가 될 때까지 문자열 뒷부분부터 인자로 받은 문자열을 채워 새로운 문자열을 반환한다.
