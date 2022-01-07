@@ -6,7 +6,6 @@
 - radix의 값이 2보다 작거나 36보다 큰 경우
 - 공백이 아닌 첫 문자를 숫자로 변환할 수 없는 경우
   
-  
 3) Array.prototype.slice(begin, end);
 - 어떤 배열의 begin 인덱스부터 (end - 1) 인덱스까지의 요소들을 모아 새 배열을 리턴한다.
 - begin이 undefined인 경우, 0번 인덱스부터 slice
