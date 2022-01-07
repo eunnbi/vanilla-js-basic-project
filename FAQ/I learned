@@ -1,1 +1,14 @@
-부모 태그에서 자식 태그 불러오기 / 2중 
+부모 태그에서 자식 태그 불러오기 / 2중 forEach()
+ex)
+const questions = document.querySelectorAll(".FAQ_content li");
+questions.forEach(function(question){
+   const btn = question.querySelector(".btn");
+   btn.addEventListener("click", function(){
+      questions.forEach(function(item){
+        if (item !== question){
+            item.classList.remove("show-text");
+        }
+      };
+      question.classList.toggle("show-text");
+   });
+})
