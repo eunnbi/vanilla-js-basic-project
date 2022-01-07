@@ -16,3 +16,7 @@ const arr1 = Array.from(Array(5), () => new Array(2))
 
 // arr[5][2] (null로 초기화하여 생성)
 const arr2 = Array.from(Array(5), () => Array(2).fill(null))
+
+
+**element.style.gridTemplateColumns = `repeat(${row}, 1fr)`;
+** 배열의 값을 화면에 표기하는 방법!!
