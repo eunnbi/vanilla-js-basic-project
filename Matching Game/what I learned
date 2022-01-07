@@ -1,0 +1,10 @@
+1) 복합적인 값을 다룰 수 있는 Object ex) { card: "🍏", isOpen: false, isMatched: false, id: id}
+2) Object와 Array를 함께 쓰는 방법
+
+3) shuffle 방법: Array.prototype.sort() + Math.random()
+- Array.prototype.sort(compareFunction) : 배열의 요소들을 정렬하여 정렬된 메서드 반환
+- compareFunction: 정렬 순서를 정의하는 함수
+- compareFunction: () => Math.random() - 0.5
+
+3) 1장이 열려있을 때와 2장이 열려있을 때 다르게 동작 -> flag 이용
+4) open card, close card: css animation + setTimeout
