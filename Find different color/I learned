@@ -1,0 +1,18 @@
+자바스크립트에서 2차원 배열 만들기
+
+1) 초기값을 할당하여 배열 생성
+const arr = [['a','b'], ['c', 'd'], ['e', 'f'], ['g', 'h'], ['i', 'j']];  // arr[5][2]
+
+2) 반복문 이용
+var arr = new Array(5);
+
+for (var i = 0; i < arr.length; i++) {
+    arr[i] = new Array(2);
+}
+
+3) ES6
+// arr[5][2] (빈 배열 생성)
+const arr1 = Array.from(Array(5), () => new Array(2))
+
+// arr[5][2] (null로 초기화하여 생성)
+const arr2 = Array.from(Array(5), () => Array(2).fill(null))
