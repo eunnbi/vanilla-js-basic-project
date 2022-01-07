@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist &#10084;</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="playlist-wrap">
+        <audio src="musics/eastside.mp3" preload="metadata" class="music__audio"></audio>
+        <section class="playlist__section">
+            <header class="header">
+                <button>
+                    <a href="#">
+                        <i class="fas fa-arrow-left"></i>
+                      </a>
+                </button>
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </header>
+            <div class="playlist__image">
+                <i class="fas fa-music"></i>
+            </div>
+            <div class="playlist__title">
+                <h1>playlist &#x2764;</h1>
+            </div>
+            <ul class="playlist__musics">
+                
+            </ul>
+
+            <div class="playlist__playing">
+                <div class="playlist__music-column">
+                    <div class="playlist__music-image">
+                        <img src="images/eastside.jpg" alt="" class="playlist__music-image playing">
+                    </div>
+                    <div class="playlist__content-info">
+                        <span class="playlist__music-title playing">eastside</span>
+                        <span class="playlist__music-singer playing">benny blanco, Halsey & Khalid</span>
+                    </div>
+                </div>
+                <div class="playlist__music-column">
+                    <div class="playlist__control-btns">
+                        <button class="playlist__control-btn backward-btn">
+                          <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button class="playlist__control-btn play-btn">
+                            <i class="fas fa-play fa-lg"></i>
+                        </button>
+                        <button class="playlist__control-btn pause-btn hidden">
+                          <i class="fas fa-pause"></i>
+                        </button>
+                        <button class="playlist__control-btn forward-btn">
+                          <i class="fas fa-step-forward"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="playing__section">
+            <header class="header">
+                <button>
+                    <a href="#">
+                        <i class="fas fa-arrow-left"></i>
+                      </a>
+                </button>
+                <button>
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </header>
+            <div class="playing__content">
+                <img src="images/eastside.jpg" alt="" class="playing__image">
+                <div class="music__info">
+                    <h3 class="music__title">Eastside</h3>
+                    <h4 class="music__singer">benny blanco, Halsey & Khalid</h4>
+                </div>
+                <div class="music__slider">
+                    <div class="current-time">0:00</div>
+                    <input type="range" class="seek-slider" max="100" value="0">
+                    <div class="music-duration"></div>
+                </div>    
+                <div class="control-btns">
+                    <button class="control-btn backward-btn">
+                        <i class="fas fa-step-backward fa-lg"></i>
+                    </button>
+                    <button class="control-btn play-btn">
+                        <i class="fas fa-play fa-lg"></i>
+                    </button>
+                    <button class="control-btn pause-btn hidden">
+                        <i class="fas fa-pause fa-lg"></i>
+                    </button>
+                    <button class="control-btn forward-btn">
+                        <i class="fas fa-step-forward fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/setting.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/1d0a4aeb76.js" crossorigin="anonymous"></script>
+</body>
+</html>
