@@ -1,0 +1,10 @@
+JS로 CSS style handling
+1) const slides = document.querySelectorAll(".slide");
+   slides.forEach(function(slide, index){
+    slide.style.left = `${index * 100}%`;
+   }
+2) function imgSlide(currentImgIndex){
+    slides.forEach(function(slide){
+      slide.style.transform = `transformX(${-currentImgIndex * 100}%)`;
+    }  
+   }
