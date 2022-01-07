@@ -18,7 +18,7 @@
    - td/ th/ table
    - body
    
-- clientWidth / clientWidth: 요소의 내부 너비와 높이 (padding 포함, border, scrollbar, margin 포함 x)
+- clientWidth / clientHeight: 요소의 내부 너비와 높이 (padding 포함, border, scrollbar, margin 포함 x)
    - padding 없는 경우 위 속성을 이용하여 콘텐츠의 너비와 높이를 구할 수 있다.
 - clientTop / clientLeft: 위쪽/왼쪽 테두리 너비와 높이
 
