@@ -1,4 +1,2 @@
 1) video tag 관련 속성들: controls, muted, autoplay, loop 등
 2) play() / pause(): 비디오 재생 및 멈춤 메서드
-ex) const video = document.querySelector("video");
-    video.play() / video.pause();
