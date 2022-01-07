@@ -1,0 +1,12 @@
+1) HTML 요소 순회
+- document.querySelectorAll(): 인자로 넘긴 CSS 선택자를 만족하는 모든 element 목록 반환
+- 반환된 element 목록은 forEach() 메서드로 순회 가능
+- Array.prototype.forEach(callback(currentValue, index, array){}, thisArg);
+  - currentValue: 처리할 현재 요소 값
+  - index: 현재 요소의 인덱스 값
+  - array: 메서드를 호출한 배열
+
+2) target.addEventListener("event type", callback function);
+  - 이벤트 리스너 메서드는 콜백함수를 인자로 받는다.
+  - 콜백함수 제어권을 가진 이벤트 리스너 메서드는 콜백함수를 호출할 때 첫번째 인자로 이벤트 객체를 넘긴다.
+  - 이벤트 객체는 방금 일어난 이벤트에 대한 정보를 담고 있다.
