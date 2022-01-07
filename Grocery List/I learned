@@ -1,0 +1,32 @@
+로컬 스토리지 이용!! (원리를 이해하는 것이 중요)
+** localStorage API
+ - localStorage.length
+ - localStorage.key(index)
+ - localStorage.getItem(keyName)
+ - localStorage.setItem(keyName, keyValue)
+ - localStorage.removeItem(keyName)
+ - localStorage.clear()
+ 
+** localStorage.setItem(KEY_NAME, JSON.stringfy(items));
+- JSON.stringfy(): array/object -> string
+
+** id를 이용하여 구분!!
+
+1) 추가 기능
+- li 태그 생성, id 지정, innerHTML 지정, 내부 button에 이벤트 리스너 추가(편집, 삭제 기능), 부모 요소에 추가 (appendChild(li))
+- items 배열 업데이트: push 메서드 이용
+  const newItem = { item: value, id: id, done: false, }
+  items.push(newItem);
+
+2) 편집 기능
+- form input 태그로 값 가져오기
+- 해당 태그의 값 변경 (editFlag, editElement 사용)
+- items 배열 업데이트: map 메서드 이용 (editID 사용)
+
+3) 삭제 기능
+- 해당 태그 삭제 (li.remove();)
+- items 배열 업데이트: filter 메서드 이용
+
+4) localStorage 저장된 items 셋업하기
+- localStorage.getItem(KEY_NAME); 이용
+- JSON.parse(): string -> array/object
