@@ -1,0 +1,18 @@
+1) 테이블에 행 추가하기
+let newRow = HTMLTableElement.inserRow(index);
+- index: 새로 생성된 행이 테이블에 들어갈 위치 index, default 값은 -1이고, 테이블의 마지막에 행 추가
+- 반환값: 새로 추가된 행을 가리키는 reference
+
+2) 테이블에 행에 셀 추가하기
+let newCell = HTMLTableRowElement.inserCell(index);
+- index: 새로 생성된 셀이 들어갈 위치 index, defalut 값은 -1이고, 행의 마지막에 셀 추가
+- 반환값: 새로 추가된 셀을 가리키는 reference
+
+3) 테이블 행 삭제하기
+HTMLTableElement.deleteRow(index)
+- index: 삭제할 행의 위치 index, -1로 지정하면 테이블의 가장 마지막 행 삭제
+- 첫번째 행을 제외한 나머지 행 삭제
+  const rowLength = table.rows.length; // 테이블 행의 개수
+  for (let i = 0; i < rowLength - 1; i++){
+    table.deleteRow(-1);
+  }
