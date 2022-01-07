@@ -1,0 +1,7 @@
+let timerId = setTimeout(callback, delay, arg1, arg2, ...)
+- 일정 시간(delay)이 지난 후 콜백함수 호출
+- setTimeout으로 등록된 타이머 id 반환
+
+clearTimeout(timerId): 등록된 타이머 id를 취소하여 콜백함수 호출 취소
+
+**setTimeout을 이용!! (delay)
