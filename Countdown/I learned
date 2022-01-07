@@ -32,3 +32,9 @@ oneDay = 24hour = 24 * 60 * 60 * 1000ms
 5) padEnd(targetLength, padString);
 - 만약 현재 문자열 길이가 주어진 문자열 길이보다 크다면 그대로 현재 문자열 반환
 - 아니라면 주어진 문자열 길이가 될 때까지 문자열 뒷부분부터 인자로 받은 문자열을 채워 새로운 문자열을 반환한다.
+
+6) let timerId = setInterval(callback, delay, arg1, arg2, ...);
+- 일정 시간(delay) 간격을 두고 콜백함수 실행
+
+7) clearInterval(timerId);
+- setInterval로 호출될 콜백함수 호출 스케줄링 취소
