@@ -10,3 +10,14 @@
   - 이벤트 리스너 메서드는 콜백함수를 인자로 받는다.
   - 콜백함수 제어권을 가진 이벤트 리스너 메서드는 콜백함수를 호출할 때 첫번째 인자로 이벤트 객체를 넘긴다.
   - 이벤트 객체는 방금 일어난 이벤트에 대한 정보를 담고 있다.
+  ex) target.addEventListener("click", function(e){
+  
+  });
+
+
+3) e.target.className vs e.target.classList
+- e.target.classList: 특정 요소의 모든 class 이름을 반환한다.
+- e.target.classList.contains("className"): classList에 특정한 클래스 이름이 있는지 확인
+- className은 모든 클래스를 대체하지만, classList는 그렇지 않다.
+- 만약 classList를 사용하면 요소가 가질 수 있는 다른 클래스에 영향을 주지 않고 클래스를 추가할 수 있다.
+  하지만 className를 사용하여 새 클래스를 추가하면 기존에 있던 모든 클래스가 삭제된다.
