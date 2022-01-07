@@ -3,5 +3,8 @@ Form Validation (사용자 입력 제어하기)
 - 3자리보다 작거나 큰 숫자가 입력된 경우: value.length !== cnt
 - 숫자가 중복으로 입력된 경우: reduce 메서드, include 메서드 이용
 
-let timerId = setTimeout(callback, delay, arg1, arg2, ...): 일정 시간(delay)이 지난 후 콜백함수 호출
-clearTimeout(timerId): 등록된 타이머 취소, 제거
+let timerId = setTimeout(callback, delay, arg1, arg2, ...)
+- 일정 시간(delay)이 지난 후 콜백함수 호출
+- setTimeout으로 등록된 타이머 id 반환
+
+clearTimeout(timerId): 등록된 타이머 id를 취소하여 콜백함수 호출 취소
