@@ -1,0 +1,15 @@
+1) event.preventDefault(): 해당 이벤트에 대한 브라우저의 기본동작을 막기 위해 사용
+
+2) element.getBoundingClientRect(): 엘리먼트의 크기와 (padding, border 포함) 뷰포트 기준으로 한 위치 반환
+
+3) window.scrollTo(): 문서를 지정된 자표로 스크롤해줌.
+- window.scrollTo(xpos, ypos);
+- window.scrollTo({ left: 0, top: 0, behavior: 'auto'});
+- behavior: auto, smooth, instant
+
+4) window.innerHeight / innerWidth: 창틀을 제외하고 내용과 스크롤을 포함한 창의 너비와 높이
+   window.outerHeight / outerWidth: 내용, 창틀과 스크롤을 포함한 창의 너비와 높이
+5) window.pageXoffset(scrollX) / window.pageYoffset(scrollY): 현재 스크롤 정보 읽기
+
+6) 스크롤 관련 속성
+- offsetWidth / offsetHeight: 요소의 전체
