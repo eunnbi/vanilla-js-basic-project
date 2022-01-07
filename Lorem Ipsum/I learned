@@ -1,0 +1,10 @@
+1) input 태그에 입력된 값 가져오기
+- input.value -> type: string
+
+2) parseInt(string, radix): 인자로 받은 문자열로 주어진 진수에 따라 정수형으로 형변환
+* NaN를 반환하는 경우
+- radix의 값이 2보다 작거나 36보다 큰 경우
+- 공백이 아닌 첫 문자를 숫자로 변환할 수 없는 경우
+  
+  
+  3) Array.prototype.
