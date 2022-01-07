@@ -1,2 +1,2 @@
 # vanilla-js-basic-project
-Vanilla JS Project for beginners
+Vanilla JS Project for Beginners
