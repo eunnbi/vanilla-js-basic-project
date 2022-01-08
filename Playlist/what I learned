@@ -1,10 +1,50 @@
 1) input 타입이 range인 태그 스타일 커스텀
+기본스타일 리셋
+- -webkit-appearance: none;
+- focus 시 outline: none;
+
+포인터 스타일
+- 가상요소 이용
+- input[type="range"]::-webkit-slider-thumb
+- input[type="range"]::-moz-range-thumb
+- input[type="range"]::-ms-thumb
+- input[type="range"]:active::-webkit-slider-thumb / -moz-range-thumb / -ms-thumb
+
+바 스타일
+- 가상요소 이용
+- input[type="range"]::-webkit-slider-runnable-track
+- input[type="range"]::-moz-range-track
+- input[type="range"]::-ms-track
+
+지나온 부분 / 지나가야할 영역
+- input[type="range"]::-ms-fill-lower / -ms-fill-upper
+- input[type="range"]::-moz-range-progress
 
 ** JS 이용하여 지나온 영역 배경색 지정하기
+const value = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+slider.style.backgroud = `linear-gradient(to right, color1 0%, color1 ${value}%, color2 ${value}%, color2 100%)`;
 
 
 2) input 타입이 range인 태그에 음악 슬라이더 기능 적용하기
-- audio 태그 속성 / 이벤트 종류
-- input 타입이 range인 태그 속성 / 이벤트 종류
+audio 태그 속성 / 이벤트 종류
+- audio.duration, audio.currentTime (초 단위로 반환)
+- loadeddata, loadedmetadata, timeupdat 등
+
+input 타입이 range인 태그 속성 / 이벤트 종류
+- input.value, input.min, input.max 등
+- input, change
+
+range의 최댓값을 노래의 총 시간으로 설정
+range 값이 바뀌면 audio의 현재 시간이 바뀜
+audio 시간이 업데이트되면 range 값도 같이 업데이트
 
 3) e.currentTarget vs e.target
+이벤트 등록
+- 이벤트 리스너 메서드를 통해 사용자의 특정 동작과 그 특정 동작이 발생했을 때 호출할 콜백함수를 전달한다.
+이벤트 버블링 & 캡처링
+- 이벤트 버블링: 어떤 이벤트가 발생했을 때 해당 이벤트가 발생된 요소에서 부모요소를 통해 최상위 요소까지 이벤트가 전달되는 현상
+- 이벤트 캡처링: 반대로 가장 상위 요소로부터 하위 요소고 이벤트가 전파된다.
+이벤트 위임: 이벤트 버블링과 이벤트 캡처링 특성을 적절히 황용하면 여러 개의 요소들이 있을 때 각각의 요소에 이벤트를 일일히 지정할 필요 없이 부모 요소에 이벤트 하나만 주어 코드의 재 사용성을 높일 수 있다.
+e.target: 이벤트 객체, 실제 이벤트가 발생하는 요소 (최하위 요소)
+e.currentTarget: 이벤트가 바인딩된 요소 (this)
+
